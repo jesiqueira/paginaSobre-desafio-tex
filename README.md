@@ -1,2 +1,1 @@
-# paginaSobre-desafio-tex
-# Desafio individual 
+# Desafio individual - Recriar a página Sobre do projeto - Hotelária
