@@ -1,13 +1,67 @@
 @use 'variaveis';
-@use 'mixins';
+@use 'mixins' as mx;
 @use 'extends';
 
 /*Start CSS*/
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
+
+
+.navbar{
+  @include mx.flex;
+  justify-content: space-between;
+  margin: 10px 0 0 10px;
+  
+  &__logo{
+    width: 200px;
+    padding: 10px;
+    & img{
+      min-width: 200px;
+    }
+  }
+  &__links{
+    @include mx.flex;
+    & ul{
+      display: inherit;
+      @extend %list-none;
+      justify-content:space-between;
+      width: 50vw;
+      & li{
+        margin-left: 10px;
+        padding: 10px;
+      }
+      & a{
+        color: black;
+        text-decoration: none;
+      }
+    }
+  }
+  &__autenticacao{
+    margin-right: 10px;
+    & ul{
+      @include mx.flex;
+      padding: 0px;
+      & li{
+        margin-left: 30px;
+        @extend %list-none;
+        background: #E1E6E1;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      & a{
+        color: #016956;
+        text-decoration: none;
+      }
+    }
+  }
 }
 
+.container{
+  @include mx.box-container;
+}
+
+.sobre{
+  & .card{
+    background: blue;
+    @include mx.box-card;
+  }
+}
 /*End CSS*/

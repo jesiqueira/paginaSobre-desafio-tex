@@ -1,3 +1,17 @@
-@mixin box{
-    
+@mixin box-container{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+@mixin flex{
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin box-card{
+    width: 300px;
+    height: 300px;
+    padding: 2px;
+    border: 1px solid #000;
 }
