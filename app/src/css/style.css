@@ -12,6 +12,10 @@ header {
   padding: 5px;
 }
 
+.navbar__links ul, .navbar__autenticacao ul li {
+  list-style: none;
+}
+
 /*Start CSS*/
 .navbar {
   display: flex;
@@ -32,7 +36,6 @@ header {
 }
 .navbar__links ul {
   display: inherit;
-  list-style: none;
   justify-content: space-between;
   width: 50vw;
 }
@@ -54,7 +57,6 @@ header {
 }
 .navbar__autenticacao ul li {
   margin-left: 30px;
-  list-style: none;
   background: #E1E6E1;
   padding: 10px;
   border-radius: 10px;
@@ -62,6 +64,20 @@ header {
 .navbar__autenticacao ul a {
   color: #016956;
   text-decoration: none;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.sobre .card {
+  background: blue;
+  width: 300px;
+  height: 300px;
+  padding: 2px;
+  border: 1px solid #000;
 }
 
 /*End CSS*/

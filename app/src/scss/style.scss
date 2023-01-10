@@ -21,7 +21,7 @@
     @include mx.flex;
     & ul{
       display: inherit;
-      list-style: none;
+      @extend %list-none;
       justify-content:space-between;
       width: 50vw;
       & li{
@@ -41,7 +41,7 @@
       padding: 0px;
       & li{
         margin-left: 30px;
-        list-style: none;
+        @extend %list-none;
         background: #E1E6E1;
         padding: 10px;
         border-radius: 10px;
@@ -54,4 +54,14 @@
   }
 }
 
+.container{
+  @include mx.box-container;
+}
+
+.sobre{
+  & .card{
+    background: blue;
+    @include mx.box-card;
+  }
+}
 /*End CSS*/
