@@ -1,9 +1,67 @@
-/*Start CSS*/
 * {
-  margin: 0;
-  padding: 0;
-  border: 0;
   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+header {
+  background-color: rgba(217, 217, 217, 0.3);
+  padding: 5px;
+}
+
+/*Start CSS*/
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 0 0 10px;
+}
+.navbar__logo {
+  width: 200px;
+  padding: 10px;
+}
+.navbar__logo img {
+  min-width: 200px;
+}
+.navbar__links {
+  display: flex;
+  flex-direction: row;
+}
+.navbar__links ul {
+  display: inherit;
+  list-style: none;
+  justify-content: space-between;
+  width: 50vw;
+}
+.navbar__links ul li {
+  margin-left: 10px;
+  padding: 10px;
+}
+.navbar__links ul a {
+  color: black;
+  text-decoration: none;
+}
+.navbar__autenticacao {
+  margin-right: 10px;
+}
+.navbar__autenticacao ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+}
+.navbar__autenticacao ul li {
+  margin-left: 30px;
+  list-style: none;
+  background: #E1E6E1;
+  padding: 10px;
+  border-radius: 10px;
+}
+.navbar__autenticacao ul a {
+  color: #016956;
+  text-decoration: none;
 }
 
 /*End CSS*/

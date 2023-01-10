@@ -1,3 +1,8 @@
 @mixin box{
     
 }
+
+@mixin flex{
+    display: flex;
+    flex-direction: row;
+}
