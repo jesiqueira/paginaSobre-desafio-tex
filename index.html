@@ -5,22 +5,39 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="app/src/css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
         <title>Desafio - Página Sobre</title>
     </head>
     <body>
         <header>
-            <nav class="navbar container">
+            <nav class="navbar">
                 <div class="navbar__logo">
                     <a href="index.html">
                         <img src="app/src/img/logo.svg" alt="" />
                     </a>
                 </div>
                 <div class="navbar__links">
-                    <ul class="linhs__ul">
+                    <ul class="links__ul">
                         <li><a href="#">O Hotel</a></li>
                         <li><a href="#">Acomodações</a></li>
                         <li><a href="#">Reservas</a></li>
                         <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="navbar__autenticacao">
+                    <ul>
                         <li><a href="#">Cadastrar</a></li>
                         <li><a href="#">Acessar</a></li>
                     </ul>
@@ -28,18 +45,29 @@
             </nav>
         </header>
         <main>
-            <section class="sobre container">
-                <div class="sobre__container container">
-                    <div class="sobre__container__texto__pscina"></div>
-                    <div>
-                        <img src="/app/src/img/pscina.svg" alt="" />
+            <section class="container">
+                <div class="container__sobre">
+                    <div class="container__img1">
+                        <div class="sobre__texto card">
+                            <h3>Tenha momentos refrescante e divertido!</h3>
+                        </div>
+                        <div class="card__shadow card">
+                            <img src="/app/src/img/piscina.jpg" alt="" />
+                        </div>
                     </div>
-                    <div>
-                        <img src="/app/src/img/cafe.svg" alt="" />
+                    <div class="container__img1">
+                        <div class="card__shadow card">
+                            <img src="/app/src/img/cafe.jpg" alt="" />
+                        </div>
+                        <div class="sobre__texto card">
+                            <h3>
+                                Para começarmos o dia cheio de energia, temos o
+                                melhor no café da manhã.
+                            </h3>
+                        </div>
                     </div>
-                    <div class="sobre__container__texto__cafe"></div>
                 </div>
-                <div class="sobre__info">
+                <div class="container__info">
                     <h1>Sobre Chrloe GranHotel</h1>
                     <p>
                         Uma história de gerações, propriedade da Família
@@ -63,68 +91,76 @@
             </section>
         </main>
         <footer>
-            <div class="footer container">
-                <div class="footer__logo logo">
+            <hr class="footer__hr" />
+            <div class="footer">
+                <div class="footer__logo">
                     <a href="index.html">
                         <img src="/app/src/img/logo.svg" alt="" />
                     </a>
                 </div>
-                <div class="footer__hotel container">
-                    <ul class="footer_ul">
-                        <li><h3>O hotel</h3></li>
-                        <li>Acomodações</li>
-                        <li>Reservas</li>
-                    </ul>
-                </div>
-                <div class="footer__contato container">
-                    <ul class="footer__contato__ul">
-                        <li><h3>Contato</h3></li>
-                        <li>
-                            <a href="mailto:oi@chloegrandhotel.com"
+                <div class="footer__container">
+                    <div class="footer__hotel">
+                        <ul>
+                            <li><h3>O hotel</h3></li>
+                            <li><a href="#">Acomodações</a></li>
+                            <li><a href="#">Reservas</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__contato">
+                        <ul>
+                            <li><h3>Contato</h3></li>
+                            <li>
+                                <i class="fa-regular fa-envelope"> </i> <a href="mailto:oi@chloegrandhotel.com"
                                 >Envio nos um e-mail</a
                             >
-                        </li>
-                        <li><a href="tel:+8131398800">+55 81 31398-800</a></li>
-                    </ul>
-                </div>
-                <div class="footer__endereco">
-                    <ul class="footer__endereco__ul">
-                        <li><h3>Onde Estamos</h3></li>
-                        <li>
-                            <address>
-                                <p>R. Barão de Santo Ângelo, 100</p>
-                                <p>Recife - Pernambuco - Brasil</p>
-                            </address>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__redeSociais">
-                    <ul class="footer__redeSociais__ul">
-                        <li>
-                            <a href="#"
-                                ><img
-                                    src="/app/src/img/instagram.svg"
-                                    alt="Logo do Instagram"
-                                />Instagram</a
-                            >
-                        </li>
-                        <li>
-                            <a href="#"
-                                ><img
-                                    src="/app/src/img/twitter.svg"
-                                    alt="Logo do twitter"
-                                />Twitter</a
-                            >
-                        </li>
-                        <li>
-                            <a href="#"
-                                ><img
-                                    src="/app/src/img/facebook.svg"
-                                    alt="Logo do facebook"
-                                />Facebook</a
-                            >
-                        </li>
-                    </ul>
+                               
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-phone"></i>
+                                <a href="tel:+8131398800">+55 81 31398-800</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__endereco">
+                        <ul>
+                            <li><h3>Onde Estamos</h3></li>
+                            <li>
+                                <address>
+                                    <p>R. Barão de Santo Ângelo, 100</p>
+                                    <p>Recife - Pernambuco - Brasil</p>
+                                </address>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__redeSociais">
+                        <ul>
+                            <li><h3>Redes sociais</h3></li>
+                            <li class="rede">
+                                <a href="#"
+                                    ><img
+                                        src="/app/src/img/instagram.svg"
+                                        alt="Logo do Instagram"
+                                /></a>
+                                <!-- Instagram -->
+                            </li>
+                            <li class="rede">
+                                <a href="#"
+                                    ><img
+                                        src="/app/src/img/twitter.svg"
+                                        alt="Logo do twitter"
+                                /></a>
+                                <!-- Twitter -->
+                            </li>
+                            <li class="rede">
+                                <a href="#"
+                                    ><img
+                                        src="/app/src/img/facebook.svg"
+                                        alt="Logo do facebook"
+                                /></a>
+                                <!-- Facebook -->
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="copyright">
