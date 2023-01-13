@@ -175,3 +175,13 @@ p{
 }
 
 /*End CSS*/
+
+/*Start Media Query*/ 
+@media (max-width: 416px) and (orientation: portrait){
+  div.navbar.hiddle{
+    display: none;
+  }
+}
+/*End Media Query*/ 
+
+
