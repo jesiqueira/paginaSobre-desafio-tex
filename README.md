@@ -1,4 +1,4 @@
-# Recriar a página Sobre do projeto - Hotelária
+# Página Sobre do projeto - Hotelária
 ---
  > Com base no projeto principal sobre Hotelária desenvolvido em equipe, foi lançado desafio para desenvolver um projeto individual, criar uma nova versão da página sobre desse projeto. Para acessar o projeto principal desenvolvido em equipe acessar o link: [Projeto-tex-hoteria](https://github.com/edcabralc/projeto-tex-hotelaria) 
 ---
