@@ -80,7 +80,6 @@ header {
   display: flex;
   flex-direction: row;
   flex-direction: column;
-  column-gap: 10px;
   row-gap: 10px;
 }
 .container__sobre .container__img1 {
@@ -287,6 +286,59 @@ p {
   .footer__redeSociais ul li.rede {
     display: inline-block;
     margin-left: 30px;
+  }
+}
+@media (max-width: 915px) and (orientation: landscape) {
+  .container {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+  }
+  .container__sobre .container__img1 {
+    justify-content: center;
+  }
+  .container__sobre .card {
+    width: 350px;
+    height: 300px;
+  }
+  .container__sobre .card img {
+    width: 100%;
+    height: 100%;
+  }
+  .container__info {
+    width: 100%;
+    margin-top: 40px;
+  }
+  h1 {
+    text-align: center;
+  }
+  .footer__hr {
+    margin-top: 30px;
+  }
+  .footer__logo {
+    display: none;
+  }
+  .footer__container .footer__hotel ul li a,
+  .footer__container .footer__hotel ul li p,
+  .footer__container .footer__contato ul li a,
+  .footer__container .footer__contato ul li p,
+  .footer__container .footer__endereco ul li a,
+  .footer__container .footer__endereco ul li p {
+    font-size: 1em;
+  }
+  .footer__container .footer__redeSociais ul li.rede {
+    display: inline-block;
+    margin: 0 0 0 10px;
+  }
+  .footer__container .footer__redeSociais ul li.rede a,
+  .footer__container .footer__redeSociais ul li.rede p {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #686b68;
   }
 }
 /*End Media Query*/
