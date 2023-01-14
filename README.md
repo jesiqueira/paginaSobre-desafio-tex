@@ -7,7 +7,7 @@
   > Esse projeto tem com finalidade aprimorar o conhecimento adiquiridos no curso
    
 ## Tecnologias utilizadas para esse projeto
-<mark>HTML</mark> | <mark>CSS</mark>
+<mark>HTML</mark> | <mark>CSS</mark> | <mark>SASS</mark>
 
 
 # Estrutura do projeto
