@@ -62,25 +62,23 @@
         flex-direction: column;
         column-gap: 10px;
         row-gap: 10px;
-        .container__img1{
+        .container__img1 {
             @include mx.flex;
             column-gap: 10px;
-            
-            .sobre__texto{
-              display: inherit;
-              color: red;
-              align-items: center;
-              justify-content: space-around;
-              
+
+            .sobre__texto {
+                display: inherit;
+                align-items: center;
+                justify-content: space-around;
             }
 
-            .card__shadow{
-              box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            .card__shadow {
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
             }
         }
         & .card {
             @include mx.box-card;
-            
+
             & img {
                 width: 100%;
                 height: 100%;
@@ -92,86 +90,190 @@
     }
 }
 
-.footer__hr{
-  margin-top: 100px;
-  border-top: 1px solid #B9AD81;
-  width: 90%;
+.footer__hr {
+    margin-top: 100px;
+    border-top: 1px solid #b9ad81;
+    width: 90%;
 }
-.footer{
-  @include mx.flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 90%;
-  margin:  0 auto;
+.footer {
+    @include mx.flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
 
-  &__logo{
-    & img{
-      width: 100%;
-    }
-  }
-
-  &__container{
-    display: inherit;
-    align-items: baseline;
-    
-    .footer__hotel, .footer__contato, .footer__endereco, .footer__redeSociais{
-      & ul{
-        padding: 0;
-        margin-left: 10px;
-        & li{
-          @extend %list-none;
-          margin: 10px;
-          & a, p{
-            text-decoration: none;
-            font-size: 1.2em;
-            color: #686B68;
-          }
-          .fa-regular{
-            color: #686B68;
-          }
+    &__logo {
+        & img {
+            width: 100%;
         }
-      }
     }
-    .footer__redeSociais{
 
-      // justify-items: center;
-      & ul{
-        & li.rede{
-          display: inline-block;
+    &__container {
+        display: inherit;
+        align-items: baseline;
+
+        .footer__hotel,
+        .footer__contato,
+        .footer__endereco,
+        .footer__redeSociais {
+            & ul {
+                padding: 0;
+                margin-left: 10px;
+                & li {
+                    @extend %list-none;
+                    margin: 10px;
+                    & a,
+                    p {
+                        text-decoration: none;
+                        font-size: 1.2em;
+                        color: #686b68;
+                    }
+                    .fa-regular {
+                        color: #686b68;
+                    }
+                }
+            }
         }
-      }
-      margin: 0;
-
-
+        .footer__redeSociais {
+            // justify-items: center;
+            & ul {
+                & li.rede {
+                    display: inline-block;
+                }
+            }
+            margin: 0;
+        }
     }
-  }
 }
-.copyright{
-  @include mx.flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #EFF5F0;
-}
-
-h1{
-  font-family: v.$fontFamily;
-  margin: v.$margem;
-  color: v.$colorGrenn;
-  font-size: 3.5em;
-  font-weight: 100;
-}
-h3{
-  font-family: v.$fontFamily;
-  color: v.$colorGrenn;
-  font-size: 2em;
-  font-weight: 100;
+.copyright {
+    @include mx.flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eff5f0;
 }
 
-p{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5em;
-  text-align:justify;
-  text-indent: 2em;
+h1 {
+    font-family: v.$fontFamily;
+    margin: v.$margem;
+    color: v.$colorGrenn;
+    font-size: 3.5em;
+    font-weight: 100;
+}
+h3 {
+    font-family: v.$fontFamily;
+    color: v.$colorGrenn;
+    font-size: 2em;
+    font-weight: 100;
 }
 
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+.portable {
+    &__hiddle {
+        display: none;
+    }
+}
 /*End CSS*/
+
+/*Start Media Query*/
+@media (max-width: 416px) and (orientation: portrait) {
+    .hiddle {
+        display: none;
+    }
+    .portable {
+        &__hiddle {
+            display: flex;
+            flex-direction: column;
+            padding: 2px;
+            align-items: center;
+        }
+        &__logo {
+            & img {
+                width: 100%;
+            }
+        }
+        &__links {
+            width: 100%;
+            // background-color: #b9ad81;
+            margin-top: 10px;
+            background-color: rgba(217, 217, 217, 0.3);
+            & ul {
+                margin: v.$margem;
+                padding: v.$pad;
+                @include mx.flex;
+                justify-content: center;
+
+                & li {
+                    margin-left: 10px;
+                    list-style: none;
+                    // background: #e1e6e1;
+                    padding: 10px;
+                    border-radius: 10px;
+                }
+                & a {
+                    color: #016956;
+                    // color: #f3f5f4;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .container {
+        @include mx.box-container;
+        margin-top: 50px;
+        @include mx.flex;
+        flex-direction: column;
+        &__sobre {
+            & .card {
+                width: 100%;
+                height: 150px;
+                & img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        &__info {
+            width: 100%;
+            margin-top: 40px;
+        }
+    }
+    h1 {
+        font-size: 2.6em;
+        white-space: nowrap;
+    }
+    h3 {
+        font-size: 1.3em;
+    }
+    p {
+        font-size: 1.1em;
+    }
+
+    .footer__hr {
+        margin-top: 30px;
+    }
+    .footer {
+        flex-direction: column;
+        margin-top: 30px;
+        &__container {
+            flex-direction: column;
+        }
+        &__redeSociais {
+            margin: 0;
+            width: 100%;
+
+            & ul {
+                & li.rede {
+                    display: inline-block;
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
+}
+/*End Media Query*/

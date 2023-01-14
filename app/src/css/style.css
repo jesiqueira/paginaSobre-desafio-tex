@@ -12,7 +12,10 @@ header {
   padding: 5px;
 }
 
-.navbar__links ul, .navbar__autenticacao ul li, .footer__container .footer__hotel ul li, .footer__container .footer__contato ul li, .footer__container .footer__endereco ul li, .footer__container .footer__redeSociais ul li {
+.navbar__links ul, .navbar__autenticacao ul li, .footer__container .footer__hotel ul li,
+.footer__container .footer__contato ul li,
+.footer__container .footer__endereco ul li,
+.footer__container .footer__redeSociais ul li {
   list-style: none;
 }
 
@@ -87,7 +90,6 @@ header {
 }
 .container__sobre .container__img1 .sobre__texto {
   display: inherit;
-  color: red;
   align-items: center;
   justify-content: space-around;
 }
@@ -109,7 +111,7 @@ header {
 
 .footer__hr {
   margin-top: 100px;
-  border-top: 1px solid #B9AD81;
+  border-top: 1px solid #b9ad81;
   width: 90%;
 }
 
@@ -128,20 +130,36 @@ header {
   display: inherit;
   align-items: baseline;
 }
-.footer__container .footer__hotel ul, .footer__container .footer__contato ul, .footer__container .footer__endereco ul, .footer__container .footer__redeSociais ul {
+.footer__container .footer__hotel ul,
+.footer__container .footer__contato ul,
+.footer__container .footer__endereco ul,
+.footer__container .footer__redeSociais ul {
   padding: 0;
   margin-left: 10px;
 }
-.footer__container .footer__hotel ul li, .footer__container .footer__contato ul li, .footer__container .footer__endereco ul li, .footer__container .footer__redeSociais ul li {
+.footer__container .footer__hotel ul li,
+.footer__container .footer__contato ul li,
+.footer__container .footer__endereco ul li,
+.footer__container .footer__redeSociais ul li {
   margin: 10px;
 }
-.footer__container .footer__hotel ul li a, .footer__container .footer__hotel ul li p, .footer__container .footer__contato ul li a, .footer__container .footer__contato ul li p, .footer__container .footer__endereco ul li a, .footer__container .footer__endereco ul li p, .footer__container .footer__redeSociais ul li a, .footer__container .footer__redeSociais ul li p {
+.footer__container .footer__hotel ul li a,
+.footer__container .footer__hotel ul li p,
+.footer__container .footer__contato ul li a,
+.footer__container .footer__contato ul li p,
+.footer__container .footer__endereco ul li a,
+.footer__container .footer__endereco ul li p,
+.footer__container .footer__redeSociais ul li a,
+.footer__container .footer__redeSociais ul li p {
   text-decoration: none;
   font-size: 1.2em;
-  color: #686B68;
+  color: #686b68;
 }
-.footer__container .footer__hotel ul li .fa-regular, .footer__container .footer__contato ul li .fa-regular, .footer__container .footer__endereco ul li .fa-regular, .footer__container .footer__redeSociais ul li .fa-regular {
-  color: #686B68;
+.footer__container .footer__hotel ul li .fa-regular,
+.footer__container .footer__contato ul li .fa-regular,
+.footer__container .footer__endereco ul li .fa-regular,
+.footer__container .footer__redeSociais ul li .fa-regular {
+  color: #686b68;
 }
 .footer__container .footer__redeSociais {
   margin: 0;
@@ -155,7 +173,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: #EFF5F0;
+  background-color: #eff5f0;
 }
 
 h1 {
@@ -180,6 +198,97 @@ p {
   text-indent: 2em;
 }
 
+.portable__hiddle {
+  display: none;
+}
+
 /*End CSS*/
+/*Start Media Query*/
+@media (max-width: 416px) and (orientation: portrait) {
+  .hiddle {
+    display: none;
+  }
+  .portable__hiddle {
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    align-items: center;
+  }
+  .portable__logo img {
+    width: 100%;
+  }
+  .portable__links {
+    width: 100%;
+    margin-top: 10px;
+    background-color: rgba(217, 217, 217, 0.3);
+  }
+  .portable__links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .portable__links ul li {
+    margin-left: 10px;
+    list-style: none;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .portable__links ul a {
+    color: #016956;
+    text-decoration: none;
+  }
+  .container {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+  }
+  .container__sobre .card {
+    width: 100%;
+    height: 150px;
+  }
+  .container__sobre .card img {
+    width: 100%;
+    height: 100%;
+  }
+  .container__info {
+    width: 100%;
+    margin-top: 40px;
+  }
+  h1 {
+    font-size: 2.6em;
+    white-space: nowrap;
+  }
+  h3 {
+    font-size: 1.3em;
+  }
+  p {
+    font-size: 1.1em;
+  }
+  .footer__hr {
+    margin-top: 30px;
+  }
+  .footer {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .footer__container {
+    flex-direction: column;
+  }
+  .footer__redeSociais {
+    margin: 0;
+    width: 100%;
+  }
+  .footer__redeSociais ul li.rede {
+    display: inline-block;
+    margin-left: 30px;
+  }
+}
+/*End Media Query*/
 
 /*# sourceMappingURL=style.css.map */
